@@ -1,38 +1,54 @@
-@extends('app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<div class="card">
-    <div class="card-header">
-        {{-- Logo --}}
-        <img src="{{ asset('images/logo-g-tee.png') }}" alt="Logo" class="mb-3" style="max-height: 300px;">
+<head>
+    <meta charset="UTF-8">
+    <title>G-Tee</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .logo-font {
+        font-family: 'Fredoka', cursive;
+    }
+</style>
 
-        <h2>Welcome</h2>
-        {{-- Status Message --}}
-        @if (session('status'))
-            <div class="alert alert-info">
-                {{ session('status') }}
+</head>
+<body class="bg-gradient-to-tr from-purple-200 to-pink-300 min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-5xl w-full flex flex-col md:flex-row items-center gap-10">
+        {{-- Left Section --}}
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <h1 class="text-3xl font-semibold">Welcome to</h1>
+            <h2 class="text-6xl logo-font text-purple-700 font-extrabold mt-2">G-Tee</h2>
+            <p class="mt-3 text-gray-600 text-md md:text-lg font-medium">
+                We here to help you blooms to your max level
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+                <div class="text-center sm:text-left">
+                    <p class="font-semibold mb-2 text-sm text-gray-800">Already have an account?</p>
+                    <a href="{{ route('login') }}"
+                       class="bg-pink-400 text-white px-6 py-2 rounded-full shadow hover:bg-pink-500 transition font-semibold">
+                       Login
+                    </a>
+                </div>
+
+                <div class="text-center sm:text-left">
+                    <p class="font-semibold mb-2 text-sm text-gray-800">New to this web?</p>
+                    <a href="{{ route('register') }}"
+                       class="bg-pink-400 text-white px-6 py-2 rounded-full shadow hover:bg-pink-500 transition font-semibold">
+                       Register
+                    </a>
+                </div>
             </div>
-        @endif
+        </div>
 
-        {{-- Validation Errors --}}
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul class="mb-0">
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-    </div>
-    <div class="card-body">
-        {{-- Navigation Buttons --}}
-        <div class="form-group mb-3">
-            <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
-        </div>
-        <div class="form-group mb-3">
-            <a href="{{ route('register') }}" class="btn btn-success">Register</a>
+        {{-- Mascot Image --}}
+        <div class="w-full md:w-1/2 flex justify-center">
+            <img src="{{ asset('images/mascot.png') }}" alt="Mascot" class="w-64 drop-shadow-lg">
         </div>
     </div>
-</div>
-@endsection
+</body>
+</html>
