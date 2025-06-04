@@ -93,8 +93,7 @@ class GoalTrackerController extends Controller
                 'deadline' => $act['deadline'],
                 'status' => $act['status'],
                 'id' => $key,
-                'user_id' => $user_id,
-                'title' => $request->title,
+                'goal_id' => $key,
                 'created_at' => $createdAt,
                 'updated_at' => null
             ];
@@ -183,8 +182,7 @@ class GoalTrackerController extends Controller
                     'deadline' => $activity['deadline'] ?? '',
                     'status' => $activity['status'] ?? 'pending',
                     'id' => $id,
-                    'user_id' => $user_id,
-                    'title' => $request->title,
+                    'goal_id' => $id,
                     'created_at' => $existingData['created_at'],
                     'updated_at' => $updatedAt,
                 ];

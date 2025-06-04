@@ -66,10 +66,8 @@ class AuthController extends Controller
                 'email' => $request->email,
                 'name' => $request->name,
                 'role' => 'user',
-                'image_url' => null,
                 'status' => 'Inactive',
                 'created_at' => now()->toDateTimeString(),
-                'updated_at' => null
             ]);
 
             return redirect()->route('login')->with('status', 'Registrasi berhasil. Periksa email untuk verifikasi.');
