@@ -1,0 +1,190 @@
+/* General */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f3ff; /* Disamakan dengan versi lembut ungu */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container */
+.container {
+    padding: 2rem 1rem;
+}
+
+/* Card Style */
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(196, 165, 254, 0.08);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: transparent;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #eee;
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6f42c1;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-outline-success,
+.btn-outline-danger {
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+.btn-primary {
+    background-color: #a084dc;
+    border: none;
+}
+ .row {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+        
+                     }
+.btn-primary:hover {
+    background-color: #8a6ac9;
+}
+
+.btn-outline-success {
+    border: 1px solid #57cc99;
+    color: #57cc99;
+}
+
+.btn-outline-success:hover {
+    background-color: #57cc99;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    border: 1px solid #ff6b6b;
+    color: #ff6b6b;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+/* Accordion Buttons */
+.btn-link {
+    font-size: 1rem;
+    color: #4b2992;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #6f42c1;
+}
+
+/* Badge */
+.badge {
+    border-radius: 20px;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+}
+
+/* Custom Badge Colors */
+.badge.bg-secondary {
+    background-color: #e0cffe;
+    color: #5a359b;
+}
+
+.badge.bg-danger {
+    background-color: #f76c6c;
+}
+
+.badge.bg-warning {
+    background-color: #ffd166;
+    color: #000;
+}
+
+.badge.bg-success {
+    background-color: #8ac926;
+}
+
+.badge.bg-primary {
+    background-color: #6f42c1;
+}
+
+.badge.bg-light {
+    background-color: #f3f3f3;
+    color: #6f42c1;
+}
+
+/* Table */
+.table {
+    font-size: 0.95rem;
+}
+
+.table thead {
+    background-color: #f2ecfa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f9f1ff;
+}
+
+/* Progress Bar */
+.progress {
+    height: 20px;
+    background-color: #f0e8fd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #6f42c1;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Empty State */
+.text-muted {
+    color: #999 !important;
+}
+
+.text-center i {
+    color: #c1b0e3;
+}
+/* Edit Button */
+.btn-edit {
+    background-color: #d9b8ff;
+    color: #5f199c;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-edit:hover {
+    background-color: #b98ee6;
+    color: #fff;
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #ffc9c9;
+    color: #b00020;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-delete:hover {
+    background-color: #e74c3c;
+    color: white;
+}

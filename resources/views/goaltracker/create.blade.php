@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/custom-goaltracker.css') }}">
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -10,6 +11,7 @@
                         <a href="/goaltracker" class="btn btn-sm btn-danger float-end">Cancel</a> 
                     </h2> 
                 </div>
+             
                 <div class="card-body">
                      <form action='add-goaltracker' method="POST">
                         @csrf
@@ -50,7 +52,6 @@
                                         <option value="On Progress">On Progress</option>
                                         <option value="Done">Done</option>
                                     </select>
-                                    <!-- ✅ Tambahkan tombol hapus untuk baris pertama (opsional) -->
                                     <button type="button" class="btn btn-sm btn-danger remove-activity-btn">Hapus</button>
                                 </div>
                             </div>
@@ -107,7 +108,6 @@
                                 }
                             });
 
-                            // Inisialisasi visibilitas saat pertama kali
                             document.addEventListener('DOMContentLoaded', updateRemoveButtonsVisibility);
                         </script>
                      </form>

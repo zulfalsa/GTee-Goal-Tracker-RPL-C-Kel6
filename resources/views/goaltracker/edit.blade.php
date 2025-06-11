@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/custom-goaltracker.css') }}">
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -54,7 +55,6 @@
                                             <option value="On Progress" {{ $activity['status'] == 'On Progress' ? 'selected' : '' }}>On Progress</option>
                                             <option value="Done" {{ $activity['status'] == 'Done' ? 'selected' : '' }}>Done</option>
                                         </select>
-                                        <!-- ✅ Tambahkan tombol hapus untuk baris pertama (opsional) -->
                                         <button type="button" class="btn btn-sm btn-danger remove-activity-btn">Hapus</button>
                                     </div>
                                 @endforeach
@@ -94,7 +94,7 @@
                                 activityIndex++;
                             });
 
-                            // 🔻 Delegasi event untuk tombol hapus (berlaku untuk semua grup yang ditambahkan)
+ 
                             document.getElementById('activity-container').addEventListener('click', function(e) {
                                 if (e.target && e.target.classList.contains('remove-activity-btn')) {
                                     e.target.parentElement.remove();
