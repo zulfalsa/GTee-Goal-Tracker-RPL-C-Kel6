@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/category.css') }}">
 <div class="container">
     <div class="row">
         <div class="col-md-12">
