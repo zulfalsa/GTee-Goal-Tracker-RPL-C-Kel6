@@ -1,0 +1,131 @@
+:root {
+    --purple-soft: #cdbdfc;
+    --purple-light: #f3edfd;
+    --purple-dark: #6f42c1;
+    --gray-light: #fafafa;
+    --gray-border: #e0e0e0;
+    --text-dark: #333;
+    --text-muted: #888;
+}
+
+/* ===== Layout ===== */
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* ===== Card ===== */
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(111, 66, 193, 0.08);
+    background-color: var(--gray-light);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card-header {
+    background: linear-gradient(90deg, var(--purple-dark), var(--purple-soft));
+    color: #fff;
+    padding: 24px 28px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 24px;
+}
+
+/* ===== Table ===== */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead {
+    background-color: var(--purple-light);
+    border-radius: 12px;
+}
+
+.table th, .table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--gray-border);
+    text-align: left;
+}
+
+.table th {
+    color: var(--purple-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.table td {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    vertical-align: middle;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--purple-dark);
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5a32a3;
+}
+
+.btn-success {
+    background-color: #40c057;
+    color: white;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #37b24d;
+}
+
+.btn-danger {
+    background-color: #fa5252;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #e03131;
+}
+
+/* ===== Alerts ===== */
+.alert {
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f3ff; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
