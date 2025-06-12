@@ -41,6 +41,13 @@ body {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+.card-manage{
+  width: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
 
 .card-tool:hover {
   transform: translateY(-6px);
